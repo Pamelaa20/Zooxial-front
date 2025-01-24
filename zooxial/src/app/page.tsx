@@ -4,74 +4,72 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
-      <header className="bg-[#2E2847] text-[#C8C3DA] p-4 flex justify-between items-center">
-        <div>Zooxial</div>
-        <nav>
-          <ul className="list-none flex gap-4 m-0">
-            <li><a href="#" className="text-[#333] no-underline">Home</a></li>
-            <li><a href="#" className="text-[#333] no-underline">Pets</a></li>
-            <li><a href="#" className="text-[#333] no-underline">Services</a></li>
-            <li><a href="#" className="text-[#333] no-underline">Gallery</a></li>
-            <li><a href="#" className="text-[#333] no-underline">About Us</a></li>
-            <li><a href="#" className="text-[#333] no-underline">Contact Us</a></li>
-          </ul>
-        </nav>
-      </header>
-
+    <>
       <div className="hero text-center py-12 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('img/home.jpg')" }}>
         <h1 className="text-3xl text-[#1abc9c]">
-          Zooxial <span className="text-white">Your best Friend</span>
+          Zooxial conectando mascotas con el mejor cuidado.
         </h1>
-        <p className="text-gray-700">Cuz your best friend is also our best friend.</p>
+        <p className="text-gray-700">Tu mejor amigo.</p>
 
         <div className="form mt-4">
           <select className="p-2 m-2 border border-gray-300">
-            <option>Select your pet</option>
-            <option>Dog</option>
-            <option>Cat</option>
+            <option>Estado</option>
+            <option>Quintana Roo</option>
+            <option>Yucatan</option>
           </select>
           <select className="p-2 m-2 border border-gray-300">
-            <option>Select dog breed</option>
-            <option>German Shepherd</option>
-            <option>Labrador</option>
+            <option>Mascota</option>
+            <option>Perro</option>
+            <option>Gato</option>
           </select>
           <select className="p-2 m-2 border border-gray-300">
-            <option>Select symptom</option>
-            <option>Not listed here</option>
+            <option>Servicio</option>
+            <option>Veterinarias</option>
+            <option>Veterinarios</option>
+            <option>Alimentos</option>
+            <option>Accesorios</option>
+            <option>Alertas</option>
           </select>
           <button className="p-2 m-2 bg-[#1abc9c] text-white rounded hover:bg-[#16a085]">
-            Get Help
+            Buscar
           </button>
         </div>
       </div>
 
       <section className="services flex flex-wrap justify-around py-8">
         <div className="service w-60 text-center p-4 border border-gray-300 rounded m-2">
-          <h3 className="text-[#1abc9c]">Medical treatment for disorders</h3>
-          <p>Modern medicine has made dogs' lives much more pleasant, and longer for sure.</p>
+          <h3 className="text-[#1abc9c]">Veterinarias</h3>
+          <p><b>Cuidamos de tu mascota como parte de tu familia.</b>
+          Nuestros veterinarios están comprometidos con la salud y el bienestar de tu mascota, brindando atención médica de calidad y amor incondicional.</p>
         </div>
         <div className="service w-60 text-center p-4 border border-gray-300 rounded m-2">
-          <h3 className="text-[#1abc9c]">Broken bone & its treatment</h3>
-          <p>How often should your dog have a routine physical exam? More often than you think.</p>
+          <h3 className="text-[#1abc9c]">Veterinarios</h3>
+          <p><b>Profesionales dedicados a la salud animal.</b>
+          Nuestro equipo de veterinarios expertos está aquí para ofrecerte diagnósticos precisos y tratamientos efectivos, siempre con un enfoque personalizado para tu mascota.</p>
         </div>
         <div className="service w-60 text-center p-4 border border-gray-300 rounded m-2">
-          <h3 className="text-[#1abc9c]">Treatment for heart diseases</h3>
-          <p>Here are tips on finding the right veterinarian for you.</p>
+          <h3 className="text-[#1abc9c]">Alimentos</h3>
+          <p><b>Nutrición de calidad para cada etapa de tu mascota.</b>
+          Te ofrecemos una variedad de alimentos especializados para satisfacer las necesidades nutricionales de tu mascota, desde cachorros hasta adultos mayores.</p>
         </div>
         <div className="service w-60 text-center p-4 border border-gray-300 rounded m-2">
-          <h3 className="text-[#1abc9c]">Grooming & beauty care for pets</h3>
-          <p>In this section we cover many facets of pet grooming.</p>
+          <h3 className="text-[#1abc9c]">Accesorios</h3>
+          <p><b>Lo mejor para tu mascota.</b>
+          Encuentra en nuestra tienda los accesorios más modernos y cómodos, desde camas y juguetes hasta collares y arneses, todo lo que tu mascota necesita para estar feliz y saludable.</p>
         </div>
         <div className="service w-60 text-center p-4 border border-gray-300 rounded m-2">
-          <h3 className="text-[#1abc9c]">Vaccination for your pets</h3>
-          <p>We are prepared to ensure your pets stay healthy and protected.</p>
+          <h3 className="text-[#1abc9c]">Alertas</h3>
+          <p><b>Mantén a tu mascota segura.</b>
+          Recibe notificaciones y alertas sobre vacunación, citas de control y otros eventos importantes para el bienestar de tu mascota, todo al alcance de tu mano.</p>
+        </div>
+        <div className="service w-60 text-center p-4 border border-gray-300 rounded m-2">
+          <h3 className="text-[#1abc9c]">Mis mascotas</h3>
+          <p><b>Comparte momentos especiales con tu mascota.</b>
+          Únete a nuestra comunidad y comparte fotos, historias y consejos sobre tus mascotas. Conéctate con otros amantes de los animales y forma parte de nuestra red social.</p>
         </div>
       </section>
 
-      <footer className="footer text-center py-4 bg-gray-100 text-gray-600">
-        <p>Working hours from 10 AM to 5 PM Monday to Friday | Help Line Number: (+00) 888.222.444</p>
-      </footer>
-    </div>
+      
+    </>
   );
 }

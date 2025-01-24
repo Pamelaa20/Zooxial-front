@@ -1,16 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,11 +14,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
+        <header className="bg-[#2E2847] text-[#C8C3DA] p-4 flex justify-between items-center">
+          <div><Link href="/">Zooxial</Link></div>
+          <nav>
+            <ul className="list-none flex gap-4 m-0">
+              <li><Link href="veterinarias" className="text-[#333] no-underline">Veterinarias</Link></li>
+              <li><Link href="veterinarios" className="text-[#333] no-underline">Veterinarios</Link></li>
+              <li><Link href="alimentos" className="text-[#333] no-underline">Alimentos</Link></li>
+              <li><Link href="accesorios" className="text-[#333] no-underline">Accesorios</Link></li>
+              <li><Link href="alertas" className="text-[#333] no-underline">Alertas</Link></li>
+              <li><Link href="mis-mascotas" className="text-[#333] no-underline">Mis mascotas</Link></li>
+            </ul>
+          </nav>
+        </header>
         {children}
-      </body>
+        <footer className="footer text-center py-4 bg-gray-100 text-gray-600">
+          <p>Horario de atencion 9 a 6 PM GTM-6 | Zooxial</p>
+        </footer>
+        </body>
     </html>
   );
 }
