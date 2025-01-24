@@ -4,69 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zooxial</title>
-    <link rel="stylesheet" href="style.css">
-
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
+<body class="font-sans m-0 p-0">
+    <header class="bg-[#2E2847] text-[#C8C3DA] py-2 px-5 flex justify-between items-center">
         <div>Zooxial</div>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Pets</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+            <ul class="flex gap-4">
+                <li><a href="#" class="text-[#333] no-underline">Home</a></li>
+                <li><a href="#" class="text-[#333] no-underline">Pets</a></li>
+                <li><a href="#" class="text-[#333] no-underline">Services</a></li>
+                <li><a href="#" class="text-[#333] no-underline">Gallery</a></li>
+                <li><a href="#" class="text-[#333] no-underline">About Us</a></li>
+                <li><a href="#" class="text-[#333] no-underline">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <div class="hero">
-        <h1>Zooxial <span style="color: #ffff;">Your best Friend</span></h1>
-        <p>Cuz your best friend is also our best friend.</p>
 
-        <div class="form">
-            <select>
+    <div class="text-center py-12 bg-cover bg-center bg-no-repeat" style="background-image: url('img/animalia-3208412_1280.jpg');">
+        <h1 class="text-4xl text-[#1abc9c]">Zooxial <span class="text-white">Your best Friend</span></h1>
+        <p class="text-[#555] mt-4">Cuz your best friend is also our best friend.</p>
+
+        <div class="mt-6">
+            <select class="p-2 m-2 text-base border rounded">
                 <option>Select your pet</option>
                 <option>Dog</option>
                 <option>Cat</option>
             </select>
-            <select>
+            <select class="p-2 m-2 text-base border rounded">
                 <option>Select dog breed</option>
                 <option>German Shepherd</option>
                 <option>Labrador</option>
             </select>
-            <select>
+            <select class="p-2 m-2 text-base border rounded">
                 <option>Select symptom</option>
                 <option>Not listed here</option>
             </select>
-            <button>Get Help</button>
+            <button class="p-2 m-2 text-base text-white bg-[#1abc9c] rounded hover:bg-[#16a085]">Get Help</button>
         </div>
     </div>
-    <section class="services">
-        <div class="service">
-            <h3>Medical treatment for disorders</h3>
+
+    <section class="flex flex-wrap justify-around p-8">
+        <div class="w-60 text-center p-4 border rounded-lg m-2">
+            <h3 class="text-[#1abc9c] font-bold">Medical treatment for disorders</h3>
             <p>Modern medicine has made dogs' lives much more pleasant, and longer for sure.</p>
         </div>
-        <div class="service">
-            <h3>Broken bone & its treatment</h3>
+        <div class="w-60 text-center p-4 border rounded-lg m-2">
+            <h3 class="text-[#1abc9c] font-bold">Broken bone & its treatment</h3>
             <p>How often should your dog have a routine physical exam? More often than you think.</p>
         </div>
-        <div class="service">
-            <h3>Treatment for heart diseases</h3>
+        <div class="w-60 text-center p-4 border rounded-lg m-2">
+            <h3 class="text-[#1abc9c] font-bold">Treatment for heart diseases</h3>
             <p>Here are tips on finding the right veterinarian for you.</p>
         </div>
-        <div class="service">
-            <h3>Grooming & beauty care for pets</h3>
+        <div class="w-60 text-center p-4 border rounded-lg m-2">
+            <h3 class="text-[#1abc9c] font-bold">Grooming & beauty care for pets</h3>
             <p>In this section we cover many facets of pet grooming.</p>
         </div>
-        <div class="service">
-            <h3>Vaccination for your pets</h3>
+        <div class="w-60 text-center p-4 border rounded-lg m-2">
+            <h3 class="text-[#1abc9c] font-bold">Vaccination for your pets</h3>
             <p>We are prepared to ensure your pets stay healthy and protected.</p>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="text-center p-4 bg-gray-100 text-[#555]">
         <p>Working hours from 10 AM to 5 PM Monday to Friday | Help Line Number: (+00) 888.222.444</p>
     </footer>
 </body>
